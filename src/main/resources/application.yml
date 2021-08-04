@@ -11,3 +11,14 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+  logging:
+  level:
+    ROOT: INFO
+    org.springframework: ERROR
+    org.hibernate: ERROR
+    com.kgisl.studentspringboot: INFO
+  
+  pattern:
+    console: "- %msg%n"
+    file: "*[%-5p]-- %m--%n"
+  file: logs/studentspringboot.log

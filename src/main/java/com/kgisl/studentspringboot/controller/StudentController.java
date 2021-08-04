@@ -6,6 +6,7 @@ import com.kgisl.studentspringboot.entity.Student;
 import com.kgisl.studentspringboot.service.StudentService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,6 +22,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
 @RestController
+@EnableAspectJAutoProxy(proxyTargetClass = true)
 @RequestMapping("/api/students")
 public class StudentController {
 
